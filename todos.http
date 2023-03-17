@@ -1,0 +1,10 @@
+GET http://127.0.0.1:3333/todo
+
+###
+GET http://127.0.0.1:3333/todo/1679045094064
+
+###
+POST http://127.0.0.1:3333/todo
+Content-Type: application/json
+
+{"text":  "TEST3"}
