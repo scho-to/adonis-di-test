@@ -1,5 +1,17 @@
 {
   "commands": {
+    "todos": {
+      "settings": {
+        "loadApp": true,
+        "stayAlive": false
+      },
+      "commandPath": "./commands/ListTodos",
+      "commandName": "todos",
+      "description": "Lists all todos",
+      "args": [],
+      "aliases": [],
+      "flags": []
+    },
     "dump:rcfile": {
       "settings": {},
       "commandPath": "@adonisjs/core/build/commands/DumpRc",

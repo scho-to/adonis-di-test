@@ -1,6 +1,6 @@
 export class Todo {
   private id: number
-  constructor(private text: string, private done: boolean) {
+  constructor(private text: string, private done: boolean = false) {
     this.id = new Date().getTime()
   }
 

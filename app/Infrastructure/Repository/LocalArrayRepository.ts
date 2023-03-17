@@ -26,7 +26,6 @@ export class LocalArrayRepository extends AbstractTodoRepository {
 
   public getTodoById(id: number): Todo {
     const foundTodos = this.todos.filter((todo) => todo.getId() === id)
-    console.log(foundTodos)
     if (!foundTodos || foundTodos.length === 0) {
       throw new Error('todo not found by id ' + id)
     }

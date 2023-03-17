@@ -8,7 +8,6 @@ export default class AppProvider {
   public register() {
     // Register your own bindings
     this.app.container.singleton('App/Infrastructure/Repository/LocalArrayRepository', () => {
-      console.log('App/Infrastructure/Repository/LocalArrayRepository')
       return new LocalArrayRepository()
     })
   }
@@ -19,7 +18,6 @@ export default class AppProvider {
       'App/Infrastructure/Repository/LocalArrayRepository'
     )
     this.app.container.bind('App/Application/TodoService', () => {
-      console.log('App/Application/TodoService')
       return new TodoService(repo)
     })
   }
